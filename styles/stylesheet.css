@@ -1,0 +1,374 @@
+body {
+  background-color: #f5f5f5;
+  font-size: 12px;
+  width: 21cm;
+  height: 29.7cm;
+  margin: 0 auto;
+}
+
+#page {
+  background-color: #ffffff;
+  display: block;
+  margin-top: 0.5cm;
+  border: 1px solid #cccccc;
+}
+
+#portfolio-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#portfolio-header {
+  height: 4.34cm;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#file-input-button {
+  opacity: 0;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  outline: 1px solid #000;
+  outline: -webkit-focus-ring-color auto 2px;
+}
+
+#portfolio-header-img-container {
+  width: 5.36cm;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+#portfolio-header-img,
+#portfolio-header-placeholder {
+  width: 3.5cm;
+  height: 3.5cm;
+  border-radius: 3cm;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#portfolio-header-placeholder {
+  background-color: #dddddd;
+  cursor: hand;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#portfolio-header-placeholder:active,
+#portfolio-header-placeholder:hover {
+  background-color: #cdcdcd;
+}
+
+#portfolio-header-placeholder #placeholder-img {
+  z-index: 10;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+#portfolio-header-text-container {
+  width: calc(100% - 5.36cm);
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0.4cm 0.93cm 0.1cm 0.2cm;
+}
+
+#portfolio-header-text-container .input {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+#portfolio-header-text-container textarea {
+  resize: none;
+  rows: 2;
+  overflow: hidden;
+}
+
+#portfolio-header-text-container #name-input {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#portfolio-header-text-container #title-input {
+  color: #2558DD;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#portfolio-header-text-container #description-input {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#portfolio-contact {
+  height: 1.01cm;
+  width: 100%;
+  background-color: #EAF0FF;
+  color: #2558DD;
+  font-weight: 600;
+  padding: 0 0.4cm;
+  overflow: hidden;
+}
+
+#contact-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  align-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-list-item {
+  display: inline-block;
+  margin: 0 0.1cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-list-item .input {
+  white-space: nowrap;
+  font-size: 11.5px;
+}
+
+.contact-list-item .input:focus-visible {
+  outline: none;
+}
+
+.contact-list-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 4px;
+}
+
+#portfolio-skills {
+  height: 2.04cm;
+  width: 100%;
+  background-color: white;
+  margin-left: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.skill-input {
+  color: white;
+  border-radius: 20px;
+  margin: auto;
+  background: #2558DD;
+  padding: 0.5em 1.2em;
+  text-align: center;
+  margin: 0 0.1cm;
+  display: inline-block;
+}
+
+.skill-input:focus-visible {
+  outline: 0px solid transparent;
+  -webkit-user-select: all;
+  user-select: all;
+}
+
+#portfolio-work {
+  height: 12.3cm;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.job-item {
+  padding: 0.1cm 0.3cm;
+  overflow: hidden;
+  width: 100%;
+}
+
+#job-title-input {
+  font-weight: 600;
+  font-size: 16px;
+  width: 60%;
+  display: inline-block;
+  color: #2558DD;
+}
+
+#job-location-input {
+  text-align: right;
+  font-weight: 600;
+  width: 40%;
+  display: inline-block;
+  color: #2558DD;
+}
+
+#job-company-wrapper {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#job-company-input {
+  font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+  margin-right: 3px;
+  padding: 1px;
+}
+
+#job-url-input {
+  display: inline-block;
+  color: #555555;
+  padding: 1px;
+}
+
+#job-company-input:focus-visible,
+#job-url-input:focus-visible {
+  outline: 0px solid transparent;
+}
+
+#job-dates-wrapper {
+  display: block;
+  margin-bottom: 0.2cm;
+}
+
+#job-dates-wrapper span {
+  display: inline-block;
+  overflow: hidden;
+}
+
+#job-dates-wrapper #job-date-dash {
+  margin: 0 2px;
+}
+
+#job-start-date-input:focus-visible,
+#job-end-date-input:focus-visible {
+  outline: 0px solid transparent;
+}
+
+#portfolio-education {
+  height: 6.77cm;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#portfolio-other {
+  height: 3.24cm;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.section {
+  padding: 0.3cm 0.93cm;
+  color: #000000;
+}
+
+.section-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.section-skill > div {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.section-skill .add-item-button {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: 700;
+  user-select: none;
+}
+
+.section-list {
+  overflow: hidden;
+}
+
+.list-item {
+  margin-bottom: 0;
+}
+
+.list-item-text {
+  font-size: 13px;
+  display: inline-block;
+  width: calc(100% - 24px);
+}
+
+.list-item-bullet {
+  background-color: #2558DD;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  display: inline-block;
+  transform: translateY(-1.5px);
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+.list-item-submit {
+  display: none;
+}
+
+.add-item-button {
+  border: none;
+  background: none;
+  outline: none;
+  color: #9f9f9f;
+  font-weight: 600;
+  margin-top: 0.1cm;
+  margin-bottom: 0.4cm;
+  transition: color 0.2s;
+}
+
+.add-item-button:hover {
+  color: #2558DD;
+}
+
+.add-item-button:focus-visible,
+.add-item-button:active,
+.add-item-button:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+#print-button button {
+  margin: 0.5cm auto;
+}
+
+@page {
+  size: 21cm 29.7cm;
+}
+
+@media print {
+  .add-item-button {display: none;}
+  #print-button {display: none;}
+}
