@@ -37,6 +37,6 @@ To use the component in the application, you must also include the component thr
 
 This projects doesn't use JSX, as we're not using Babel to intrepret .jsx files.
 
-### Credits
+## Credits
 
 Made by Mikael Pernu and Kalle Laitinen. 
