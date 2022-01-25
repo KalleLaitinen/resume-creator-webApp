@@ -4,6 +4,8 @@ Resume Creator is a project with the aim of support creatives to craft CV's, por
 
 This project utilizes [Cask](https://com-lihaoyi.github.io/cask/) as an HTTP micro-framework and [React](https://reactjs.org/) (without JSX) for an interactive UI.
 
+## Screenshot
+![Screenshot 25.01.22](/static/photo_for_readme.png?raw=true)
 ## Roadmap
 
 The first version of the project includes a printable CV. Next steps would be to add a possibility to save a CV and its link through routing. Each CV would have their own page, where other users can comment on the CV. Furthermore, other document templates would be available for editing, printing and saving.
